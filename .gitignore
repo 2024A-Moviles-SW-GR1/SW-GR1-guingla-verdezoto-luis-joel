@@ -1,0 +1,34 @@
+# Carpeta 01-Clases y su contenido
+01-Clases/.gradle/
+01-Clases/.idea/
+01-Clases/app/
+01-Clases/gradle/
+01-Clases/build.gradle.kts
+01-Clases/gradle.properties
+01-Clases/gradlew
+01-Clases/gradlew.bat
+01-Clases/local.properties
+01-Clases/settings.gradle.kts
+
+# Otros archivos y carpetas a ignorar
+dist/
+tmp/
+out-tsc/
+bazel-out/
+node_modules/
+npm-debug.log
+yarn-error.log
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+.vscode/
+.DS_Store
+.env
+.env.*
+.sass-cache/
+*.css.map
+*.sass.map
+*.map
+*.swp
