@@ -29,3 +29,5 @@ out/
 *.map
 *.swp
 .fake
+
+#git pull origin main --allow-unrelated-histories:  El parámetro --allow-unrelated-histories le indica a Git que fusione los historiales, incluso si no tienen puntos en común.
