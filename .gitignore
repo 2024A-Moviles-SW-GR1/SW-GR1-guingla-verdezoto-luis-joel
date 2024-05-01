@@ -1,10 +1,6 @@
 # Carpeta 01-Clases y su contenido
 01-Clases/.gradle/
 01-Clases/.idea/
-01-Clases/app/
-01-Clases/gradle/
-01-Clases/build.gradle.kts
-01-Clases/gradle.properties
 01-Clases/gradlew
 01-Clases/gradlew.bat
 01-Clases/local.properties
@@ -32,3 +28,4 @@ out/
 *.sass.map
 *.map
 *.swp
+.fake
