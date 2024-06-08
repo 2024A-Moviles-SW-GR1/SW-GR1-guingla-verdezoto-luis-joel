@@ -1,14 +1,16 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("com.google.firebase.appdistribution")
+    id("com.google.gms.google-services")
 }
 
 android {
-    namespace = "com.example.a2024aswgr1gvlj"
+    namespace = "com.example.a2024aswgr1sqda"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.a2024aswgr1gvlj"
+        applicationId = "com.example.a2024aswgr1sqda"
         minSdk = 27
         targetSdk = 34
         versionCode = 1
@@ -20,7 +22,10 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
     compileOptions {

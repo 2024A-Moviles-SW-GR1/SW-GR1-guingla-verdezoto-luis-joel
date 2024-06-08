@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">2024ASwGr1GVLJ</string>
+    <string name="app_name" translatable="false">2024ASWGR1SQDA</string>
+    <string name="saludo"> </string>
 </resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="saludo_vertical">Hola mundo en modo Vertical</string>
+    <string name="saludo_horizontal">Hola mundo en modo Horizontal</string>
+</resources>

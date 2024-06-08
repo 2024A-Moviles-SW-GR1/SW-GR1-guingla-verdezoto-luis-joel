@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "721269644416",
+    "project_id": "adsq-swgr1-2024a",
+    "storage_bucket": "adsq-swgr1-2024a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721269644416:android:1868d50482b068228b9a65",
+        "android_client_info": {
+          "package_name": "com.example.a2024aswgr1sqda"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLuZQsWfxIFF009fCYxMqojm5-4lXii74"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
