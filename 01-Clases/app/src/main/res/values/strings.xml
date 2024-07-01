@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name" translatable="false">2024ASWGR1SQDA</string>
     <string name="saludo"> </string>
+    <string-array name="dias_semana">
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miércoles</item>
+    </string-array>
 </resources>

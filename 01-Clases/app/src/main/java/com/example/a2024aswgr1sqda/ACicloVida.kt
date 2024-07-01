@@ -1,8 +1,10 @@
 package com.example.a2024aswgr1sqda
 
 import android.os.Bundle
+import android.os.PersistableBundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.os.persistableBundleOf
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.snackbar.Snackbar
@@ -55,6 +57,26 @@ class ACicloVida : AppCompatActivity() {
         super.onDestroy()
         mostrarSnackbar("OnDestroy")
     }
+
+    override fun onSaveInstanceState(outState: Bundle ) {
+        outState
+            .run {
+                // GUARDAR LAS PRIMITIVAS
+                putString("variableTextoGuardado", textoGlobal)
+            }
+        super.onSaveInstanceState(outState)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        // RECUPERAR LA VARIABLE
+        val textoRecuperadoDeVariable: String? = savedInstanceState.getString("variableTextoGuardado")
+        if (textoRecuperadoDeVariable!=null) {
+            mostrarSnackbar(textoRecuperadoDeVariable)
+            textoGlobal = textoRecuperadoDeVariable
+        }
+    }
+
 
 
 }
