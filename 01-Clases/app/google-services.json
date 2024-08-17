@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "721269644416",
-    "project_id": "adsq-swgr1-2024a",
-    "storage_bucket": "adsq-swgr1-2024a.appspot.com"
+    "project_number": "653774087851",
+    "project_id": "gvlj-swgr1-2024a",
+    "storage_bucket": "gvlj-swgr1-2024a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:721269644416:android:1868d50482b068228b9a65",
+        "mobilesdk_app_id": "1:653774087851:android:b07b9a7c7da7ee285139ee",
         "android_client_info": {
-          "package_name": "com.example.a2024aswgr1sqda"
+          "package_name": "com.example.a2024aswgr1gvlj"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDLuZQsWfxIFF009fCYxMqojm5-4lXii74"
+          "current_key": "AIzaSyCS50zHiY51wEoeLtF58sM91r4mMXj8w8I"
         }
       ],
       "services": {

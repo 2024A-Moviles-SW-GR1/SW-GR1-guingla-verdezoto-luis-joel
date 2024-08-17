@@ -2,6 +2,7 @@ package com.example.a2024aswgr1sqda
 
 import android.content.Intent
 import android.os.Bundle
+import android.provider.ContactsContract
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -18,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             .setOnClickListener {
                 irActividad(ACicloVida::class.java)
             }
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.cl_ciclo_vida)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.id_layout_main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
@@ -29,7 +30,12 @@ class MainActivity : AppCompatActivity() {
             .setOnClickListener {
                 irActividad(BListView::class.java)
             }
+
+
+
     }
+
+
 
     fun irActividad(
         clase: Class<*>

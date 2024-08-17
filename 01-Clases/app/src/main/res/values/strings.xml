@@ -6,4 +6,7 @@
         <item>Martes</item>
         <item>Miércoles</item>
     </string-array>
+    <string name="title_activity_ebase_de_datos">EBaseDeDatos</string>
+    <string name="title_activity_ggoogle_maps_inicio">GGoogleMapsInicio</string>
+    <string name="title_activity_ggoogle_maps">GGoogleMapsActivity</string>
 </resources>

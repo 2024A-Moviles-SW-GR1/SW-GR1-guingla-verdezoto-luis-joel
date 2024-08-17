@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CRUDDepartameotnEmpleadoGVLJ</string>
+    <string name="spinner_prompt_departamento">Seleccione un Departamento</string>
 </resources>

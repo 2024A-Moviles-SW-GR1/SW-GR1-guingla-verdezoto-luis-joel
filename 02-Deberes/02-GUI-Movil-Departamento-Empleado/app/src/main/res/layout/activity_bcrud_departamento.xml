@@ -1,10 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BCrudDepartamento">
+    android:orientation="vertical"
+    android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/et_nombre_departamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre" />
+
+    <EditText
+        android:id="@+id/et_ubicacion_departamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ubicación" />
+
+    <EditText
+        android:id="@+id/et_fecha_creacion_departamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de Creación (YYYY-MM-DD)" />
+
+    <EditText
+        android:id="@+id/et_presupuesto_departamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Presupuesto" />
+
+    <CheckBox
+        android:id="@+id/cb_esta_activo_departamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Está Activo" />
+
+    <Button
+        android:id="@+id/btn_crear_departamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear Departamento" />
+
+    <Button
+        android:id="@+id/btn_confirmar_edicion_departamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lv_departamentos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:longClickable="true" />
+</LinearLayout>

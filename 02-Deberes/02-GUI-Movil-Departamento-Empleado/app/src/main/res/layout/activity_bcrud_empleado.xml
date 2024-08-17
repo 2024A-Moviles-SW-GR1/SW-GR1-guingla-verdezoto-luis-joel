@@ -1,10 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BCrudEmpleado">
+    android:orientation="vertical"
+    android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/et_nombre_empleado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre" />
+
+    <EditText
+        android:id="@+id/et_apellido_empleado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apellido" />
+
+    <EditText
+        android:id="@+id/et_fecha_nacimiento_empleado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de Nacimiento (YYYY-MM-DD)" />
+
+    <EditText
+        android:id="@+id/et_salario_empleado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Salario" />
+
+    <CheckBox
+        android:id="@+id/cb_es_gerente_empleado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Es Gerente" />
+
+    <Spinner
+        android:id="@+id/sp_departamento_empleado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/spinner_prompt_departamento" />
+
+    <Button
+        android:id="@+id/btn_crear_empleado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear Empleado" />
+
+    <Button
+        android:id="@+id/btn_confirmar_edicion_empleado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lv_empleados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:longClickable="true" />
+</LinearLayout>

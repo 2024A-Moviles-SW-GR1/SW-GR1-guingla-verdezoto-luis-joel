@@ -13,6 +13,12 @@
         android:theme="@style/Theme.CRUDDepartameotnEmpleadoGVLJ"
         tools:targetApi="31">
         <activity
+            android:name=".BCrudEmpleado"
+            android:exported="false" />
+        <activity
+            android:name=".BCrudDepartamento"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

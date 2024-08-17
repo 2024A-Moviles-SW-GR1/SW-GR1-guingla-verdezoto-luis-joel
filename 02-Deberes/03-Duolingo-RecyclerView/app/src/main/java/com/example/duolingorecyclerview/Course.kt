@@ -1,4 +1,7 @@
 package com.example.duolingorecyclerview
 
-class Course {
-}
+data class Course(
+    val name: String,
+    val description: String,
+    val lessons: List<Lesson>
+)

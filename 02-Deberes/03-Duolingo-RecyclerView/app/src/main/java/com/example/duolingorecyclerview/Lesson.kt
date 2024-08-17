@@ -1,4 +1,5 @@
 package com.example.duolingorecyclerview
 
-class Lesson {
-}
+data class Lesson(
+    val name: String
+)
