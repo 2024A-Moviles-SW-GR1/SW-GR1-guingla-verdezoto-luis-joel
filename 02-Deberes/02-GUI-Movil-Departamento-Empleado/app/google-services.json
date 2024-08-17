@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "224111121524",
+    "project_id": "crud-departamento-empleado",
+    "storage_bucket": "crud-departamento-empleado.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224111121524:android:ea5487f897b9c58523ed21",
+        "android_client_info": {
+          "package_name": "com.example.cruddepartameotnempleadogvlj"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWm2eIsXEKLd0g-SApI1nLIKaJrovK778"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

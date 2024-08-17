@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "268660017929",
+    "project_id": "plancar-proyecto-moviles",
+    "storage_bucket": "plancar-proyecto-moviles.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268660017929:android:5888da617f65c2c4f6e1d8",
+        "android_client_info": {
+          "package_name": "com.example.plancar_moviles"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPYpGAhBqO7LJVO1_5m-vP0oyLGhtZFWI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
