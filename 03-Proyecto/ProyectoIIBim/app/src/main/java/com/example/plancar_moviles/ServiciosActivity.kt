@@ -99,7 +99,7 @@ class ServiciosActivity : AppCompatActivity() {
         // En caso de que quieras manejar también la navegación a la pantalla de Cuenta
         val iconCuenta = findViewById<ImageView>(R.id.icon_cuenta)
         iconCuenta.setOnClickListener {
-            // Lógica para ir a la pantalla de Cuenta (si la tienes implementada)
+            // Lógica para ir a la pantalla de Cuenta
         }
     }
 

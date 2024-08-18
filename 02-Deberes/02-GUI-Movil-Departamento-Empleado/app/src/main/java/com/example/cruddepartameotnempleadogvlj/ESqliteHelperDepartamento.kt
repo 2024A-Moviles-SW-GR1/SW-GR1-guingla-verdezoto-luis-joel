@@ -12,7 +12,7 @@ class ESqliteHelperDepartamento(
     contexto,
     "departamentos",
     null,
-    1
+    2
 ) {
     override fun onCreate(db: SQLiteDatabase?) {
         val scriptCrearTablaDepartamento = """
@@ -20,6 +20,8 @@ class ESqliteHelperDepartamento(
                 ID INTEGER PRIMARY KEY AUTOINCREMENT,
                 NOMBRE TEXT,
                 UBICACION TEXT,
+                LATITUD REAL,
+                LONGITUD REAL,
                 FECHA_CREACION TEXT,
                 ESTA_ACTIVO INTEGER,
                 PRESUPUESTO REAL
@@ -43,7 +45,9 @@ class ESqliteHelperDepartamento(
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
-        // Manejar actualizaciones de la base de datos si cambian las versiones
+        db?.execSQL("DROP TABLE IF EXISTS DEPARTAMENTO")
+        db?.execSQL("DROP TABLE IF EXISTS EMPLEADO")
+        onCreate(db)
     }
 
     // Métodos para CRUD de Departamento
@@ -53,6 +57,8 @@ class ESqliteHelperDepartamento(
         val valores = ContentValues().apply {
             put("NOMBRE", departamento.nombre)
             put("UBICACION", departamento.ubicacion)
+            put("LATITUD", departamento.latitud)
+            put("LONGITUD", departamento.longitud)
             put("FECHA_CREACION", departamento.fechaCreacion.toString())
             put("ESTA_ACTIVO", if (departamento.estaActivo) 1 else 0)
             put("PRESUPUESTO", departamento.presupuesto)
@@ -70,9 +76,11 @@ class ESqliteHelperDepartamento(
                 id = cursor.getInt(0),
                 nombre = cursor.getString(1),
                 ubicacion = cursor.getString(2),
-                fechaCreacion = LocalDate.parse(cursor.getString(3)),
-                estaActivo = cursor.getInt(4) == 1,
-                presupuesto = cursor.getDouble(5)
+                latitud = cursor.getDouble(3),
+                longitud = cursor.getDouble(4),
+                fechaCreacion = LocalDate.parse(cursor.getString(5)),
+                estaActivo = cursor.getInt(6) == 1,
+                presupuesto = cursor.getDouble(7)
             )
             cursor.close()
             db.close()
@@ -89,6 +97,8 @@ class ESqliteHelperDepartamento(
         val valores = ContentValues().apply {
             put("NOMBRE", departamento.nombre)
             put("UBICACION", departamento.ubicacion)
+            put("LATITUD", departamento.latitud)
+            put("LONGITUD", departamento.longitud)
             put("FECHA_CREACION", departamento.fechaCreacion.toString())
             put("ESTA_ACTIVO", if (departamento.estaActivo) 1 else 0)
             put("PRESUPUESTO", departamento.presupuesto)
@@ -178,9 +188,11 @@ class ESqliteHelperDepartamento(
                     id = cursor.getInt(0),
                     nombre = cursor.getString(1),
                     ubicacion = cursor.getString(2),
-                    fechaCreacion = LocalDate.parse(cursor.getString(3)),
-                    estaActivo = cursor.getInt(4) == 1,
-                    presupuesto = cursor.getDouble(5)
+                    latitud = cursor.getDouble(3),
+                    longitud = cursor.getDouble(4),
+                    fechaCreacion = LocalDate.parse(cursor.getString(5)),
+                    estaActivo = cursor.getInt(6) == 1,
+                    presupuesto = cursor.getDouble(7)
                 )
                 departamentos.add(departamento)
             } while (cursor.moveToNext())
@@ -215,5 +227,7 @@ class ESqliteHelperDepartamento(
         db.close()
         return empleados
     }
+
+
 
 }

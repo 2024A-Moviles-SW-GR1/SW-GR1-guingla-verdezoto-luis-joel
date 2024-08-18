@@ -18,6 +18,18 @@
         android:hint="Ubicación" />
 
     <EditText
+        android:id="@+id/et_latitud_departamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Latitud" />
+
+    <EditText
+        android:id="@+id/et_longitud_departamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Longitud" />
+
+    <EditText
         android:id="@+id/et_fecha_creacion_departamento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

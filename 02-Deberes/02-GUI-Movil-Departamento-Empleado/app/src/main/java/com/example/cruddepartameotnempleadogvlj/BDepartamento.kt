@@ -8,6 +8,8 @@ class BDepartamento(
     var id: Int?,
     var nombre: String,
     var ubicacion: String,
+    var latitud: Double?,
+    var longitud: Double?,
     var fechaCreacion: LocalDate,
     var estaActivo: Boolean,
     var presupuesto: Double
@@ -16,7 +18,9 @@ class BDepartamento(
         parcel.readInt(),
         parcel.readString()!!,
         parcel.readString()!!,
-        LocalDate.parse(parcel.readString()),
+        parcel.readDouble(),
+        parcel.readDouble(),
+        LocalDate.parse(parcel.readString()!!),
         parcel.readByte() != 0.toByte(),
         parcel.readDouble()
     )
@@ -25,6 +29,8 @@ class BDepartamento(
         parcel.writeInt(id ?: -1)
         parcel.writeString(nombre)
         parcel.writeString(ubicacion)
+        parcel.writeDouble(latitud ?: 0.0)
+        parcel.writeDouble(longitud ?: 0.0)
         parcel.writeString(fechaCreacion.toString())
         parcel.writeByte(if (estaActivo) 1 else 0)
         parcel.writeDouble(presupuesto)
